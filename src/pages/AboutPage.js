@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
 import Content from '../components/Content';
 
 function AboutPage(props) {
+
+    useEffect(() => {
+        // Update the document title 
+        document.title = 'About';
+    });
 
     return (
         <div>
